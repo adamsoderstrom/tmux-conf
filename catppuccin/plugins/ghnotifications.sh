@@ -10,7 +10,7 @@
 show_ghnotifications() { # This function name must match the module name!
   local index icon color text module
 
-  notifications=$(gh api notifications --jq length)
+  notifications="$(gh api notifications --jq length)"
 
   index=$1 # This variable is used internally by the module loader in order to know the position of this module
   icon="$(  get_tmux_option "@catppuccin_ghnotifications_icon"  " "           )"
