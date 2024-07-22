@@ -10,7 +10,7 @@ show_timewarriorstatus() { # This function name must match the module name!
     index=$1 # This variable is used internally by the module loader in order to know the position of this module
 
     # The `current-timewarrior-tags` must be in the same directory as this script
-    icon="$(  get_tmux_option "@catppuccin_timewarriorstatus_icon"  "#($HOME/.tmux/plugins/tmux/custom/current-timewarrior-tags.sh)" )"
+    icon=" $(  get_tmux_option "@catppuccin_timewarriorstatus_icon"  "#($HOME/.tmux/plugins/tmux/custom/current-timewarrior-tags.sh)" )"
     color="$( get_tmux_option "@catppuccin_timewarriorstatus_color" "$thm_orange" )"
 
     # text="$( get_tmux_option "@catppuccin_timewarriorstatus_text"  "#(get_current_task)" )"
