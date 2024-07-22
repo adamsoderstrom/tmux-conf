@@ -1,6 +1,6 @@
 show_timewarriorstatus() { # This function name must match the module name!
 
-  local index icon color text module
+  local index icon color duration text module
 
   # The `current-timewarrior-duration` must be in the same directory as this script
   duration="$( get_tmux_option "@catppuccin_timewarriorstatus_text"  "#($HOME/.tmux/plugins/tmux/custom/current-timewarrior-duration.sh)" )"
