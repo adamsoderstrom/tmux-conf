@@ -13,9 +13,6 @@ show_timewarriorstatus() { # This function name must match the module name!
     icon=" $(  get_tmux_option "@catppuccin_timewarriorstatus_icon"  "#($HOME/.tmux/plugins/tmux/custom/current-timewarrior-tags.sh)" )"
     color="$( get_tmux_option "@catppuccin_timewarriorstatus_color" "$thm_orange" )"
 
-    # text="$( get_tmux_option "@catppuccin_timewarriorstatus_text"  "#(get_current_task)" )"
-    # text="$( get_tmux_option "@catppuccin_timewarriorstatus_text"  "#()" )"
-
     module=$( build_status_module "$index" "$icon" "$color" "$duration" )
 
     echo "$module"
